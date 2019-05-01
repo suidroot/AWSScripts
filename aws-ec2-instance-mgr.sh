@@ -1,7 +1,9 @@
 #!/bin/bash
 # 
 # Script to start and check status of a VM in AWS EC2
+# must have aws-cli and jq utilities installed
 #
+
 NAMETAG=$1
 COMMAND=$2
 SSHUSER=$3
