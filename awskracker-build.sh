@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -x /var/lib/dpkg/lock-frontend ]; then
+if [ -e /var/lib/dpkg/lock-frontend ]; then
     echo "dpkg running come back in a few mins"
     exit 255
 fi
