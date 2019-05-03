@@ -1,13 +1,17 @@
 #!/bin/sh
+#
+# Script to Create a EC2 GPU Instance for password Cracking
+# Must have the aws-cli and jq utlities installed
+#
 
-AMI="ami-0c80039f389c69c1f"
-KEY="Kali Key"
-SECURITYGROUP="EC2 - Only SSH Inbound"
+AMI="ami-0c80039f389c69c1f"  # Ubunuti Deep Learning 17.0
+KEY="Key"
+SECURITYGROUP="Only SSH Inbound"
 #SECURITYGROUP="sg-046ebfedbd6b759ca"
 INSTANCETYPE="g3.16xlarge"
 NAMETAG="Kracker"
 BUILDSCRIPT="~/code/AWSScripts/awskracker-build.sh"
-SSHKEY="~/.ssh/KaliKey.pem"
+SSHKEY="~/.ssh/Key.pem"
 SSHUSER="ubuntu"
 TMPFILE=`mktemp -t awsinfo`
 

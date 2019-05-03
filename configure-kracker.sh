@@ -1,4 +1,8 @@
 #!/bin/sh
+#
+# Configure vanilla Ubuntu Deployment for Hashcat
+# Tested on AWS Ubunuti Deep Learning 17.0
+#
 
 if [ -e /var/lib/dpkg/lock-frontend ]; then
     echo "dpkg running come back in a few mins"
